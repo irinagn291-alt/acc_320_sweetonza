@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07EEADDA47BAF78B7806039E /* SpilltileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156D11AB0F054ABF22132292 /* SpilltileApp.swift */; };
+		1CE81E3AC77B19F489AFA852 /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2323EF53A224A02C1FBC94 /* OnboardingFlow.swift */; };
+		23F04717FF6DC9BC921EC15C /* ReviewLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2183B36B4F680C2ADF0792 /* ReviewLaunch.swift */; };
+		244446B69DB8F1F7ADBC0648 /* TrayCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD86A08BF4150E05D817BF1 /* TrayCanvas.swift */; };
+		267438C507E4B7C4E8760FAC /* SpilltileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA1B1C3FEA56537FD3C36B0 /* SpilltileTests.swift */; };
+		2F2B93E7AA8EE6D87522A3BB /* CatchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823DBB1FC12E251086C0DCC /* CatchRoute.swift */; };
+		3DC9EBF4614BC7824D6F2D81 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A292946AE945FE420460ECEC /* APIConfig.swift */; };
+		3EC905D738F36633F317AA80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF9720B3DF8EFBD390174B /* AppDelegate.swift */; };
+		40F39FC2A506EA5D9BF7DDC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3A50A97FB63037C1CE6831 /* ContentView.swift */; };
+		4F3C7623AD4E7BD06DC79C57 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3CF78C0FF15F206C8419A399 /* Alamofire */; };
+		52E74606081E0EA153E4B65C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CBDBCB464168DD00CD10F /* Assets.xcassets */; };
+		713E1BEC89C102B839105E91 /* SpillMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D29EAD13B4E1B7B883A8EF /* SpillMark.swift */; };
+		7826E5D70ABBA5459F412837 /* DripMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D3A1B33EBE09DAD0A44D4D /* DripMark.swift */; };
+		87E5753303AE05B306AFC34E /* DayTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403CC8939FF126F2336B479E /* DayTally.swift */; };
+		A136FD8C4C9E90CD5269ED42 /* StatsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9D2E4AEB4833271A4F0183 /* StatsSheet.swift */; };
+		A6D72585FB420AE7098F9F3C /* TickMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02D8C61C568C504940945F /* TickMark.swift */; };
+		B0EB0CB4AE5CFAFBC3DAE950 /* Brim.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAF1D1E092ECA104310938F /* Brim.swift */; };
+		B1988803CCAD35813BE01FC2 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17CA89D278B1F6CADCD7487 /* DesignTokens.swift */; };
+		B54574C2BBB44B7D67834805 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAD422F98A6564E7A8AD6BE /* Tile.swift */; };
+		DAC3CEE64BA856099F3D8902 /* EditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254059FC01726F8AC283DD0 /* EditorSheet.swift */; };
+		EA31BABC08B7938E35C5B20B /* SettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF5BF63ED3357E37AF6FB5 /* SettingsSheet.swift */; };
+		EC2719BAD6991130AE69C23C /* GhostMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD415147EB9D3AE553358F4 /* GhostMark.swift */; };
+		F079BC7FC7D8F8209D838EC1 /* SpillChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76508FC9FDAFBE18E6E640D6 /* SpillChrome.swift */; };
+		F2AD621CD48983F78160805F /* TrayFold.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26131396AE4D6BE4B21F431 /* TrayFold.swift */; };
+		F3648D33A9BFB54788A62830 /* TrayPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31215B6368A120DE1AE1BC /* TrayPager.swift */; };
+		F6F6BC2EBEEDB588C18FEE0D /* TrayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC6F78CE5FBB7C8A29624FA /* TrayStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		320096585B8E007A3C245CAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC309CFC0972FB0685E42514 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDC156BB29A2510B0306307;
+			remoteInfo = Spilltile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D9CBDBCB464168DD00CD10F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DD415147EB9D3AE553358F4 /* GhostMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GhostMark.swift; sourceTree = "<group>"; };
+		156D11AB0F054ABF22132292 /* SpilltileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpilltileApp.swift; sourceTree = "<group>"; };
+		1C2183B36B4F680C2ADF0792 /* ReviewLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewLaunch.swift; sourceTree = "<group>"; };
+		1E02D8C61C568C504940945F /* TickMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickMark.swift; sourceTree = "<group>"; };
+		3AA1B1C3FEA56537FD3C36B0 /* SpilltileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpilltileTests.swift; sourceTree = "<group>"; };
+		403CC8939FF126F2336B479E /* DayTally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTally.swift; sourceTree = "<group>"; };
+		4823DBB1FC12E251086C0DCC /* CatchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchRoute.swift; sourceTree = "<group>"; };
+		5A3A50A97FB63037C1CE6831 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69D29EAD13B4E1B7B883A8EF /* SpillMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpillMark.swift; sourceTree = "<group>"; };
+		76508FC9FDAFBE18E6E640D6 /* SpillChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpillChrome.swift; sourceTree = "<group>"; };
+		814091C54FEB78A581787C82 /* Spilltile.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Spilltile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D3A1B33EBE09DAD0A44D4D /* DripMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DripMark.swift; sourceTree = "<group>"; };
+		8AAD422F98A6564E7A8AD6BE /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		986030825A1FB517A73F27B2 /* SpilltileTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SpilltileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A254059FC01726F8AC283DD0 /* EditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorSheet.swift; sourceTree = "<group>"; };
+		A292946AE945FE420460ECEC /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		A4DF9720B3DF8EFBD390174B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB31215B6368A120DE1AE1BC /* TrayPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayPager.swift; sourceTree = "<group>"; };
+		BCD86A08BF4150E05D817BF1 /* TrayCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayCanvas.swift; sourceTree = "<group>"; };
+		C17CA89D278B1F6CADCD7487 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		DA9D2E4AEB4833271A4F0183 /* StatsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsSheet.swift; sourceTree = "<group>"; };
+		DB2323EF53A224A02C1FBC94 /* OnboardingFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlow.swift; sourceTree = "<group>"; };
+		E26131396AE4D6BE4B21F431 /* TrayFold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayFold.swift; sourceTree = "<group>"; };
+		EEAF1D1E092ECA104310938F /* Brim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brim.swift; sourceTree = "<group>"; };
+		EEC6F78CE5FBB7C8A29624FA /* TrayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrayStore.swift; sourceTree = "<group>"; };
+		FDCF5BF63ED3357E37AF6FB5 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852025543CB40DB3CF3939DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F3C7623AD4E7BD06DC79C57 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094BD3761B3D9EE0959EE3C7 /* Tile */ = {
+			isa = PBXGroup;
+			children = (
+				A254059FC01726F8AC283DD0 /* EditorSheet.swift */,
+				8AAD422F98A6564E7A8AD6BE /* Tile.swift */,
+			);
+			path = Tile;
+			sourceTree = "<group>";
+		};
+		311AEE3E6C0564107C6C6971 /* Brim */ = {
+			isa = PBXGroup;
+			children = (
+				EEAF1D1E092ECA104310938F /* Brim.swift */,
+			);
+			path = Brim;
+			sourceTree = "<group>";
+		};
+		341C21AAC134100015FE470E /* GhostMark */ = {
+			isa = PBXGroup;
+			children = (
+				0DD415147EB9D3AE553358F4 /* GhostMark.swift */,
+			);
+			path = GhostMark;
+			sourceTree = "<group>";
+		};
+		342753A11248679B1FCFBD9A /* Spilltile */ = {
+			isa = PBXGroup;
+			children = (
+				A292946AE945FE420460ECEC /* APIConfig.swift */,
+				A4DF9720B3DF8EFBD390174B /* AppDelegate.swift */,
+				0D9CBDBCB464168DD00CD10F /* Assets.xcassets */,
+				5A3A50A97FB63037C1CE6831 /* ContentView.swift */,
+				C17CA89D278B1F6CADCD7487 /* DesignTokens.swift */,
+				1C2183B36B4F680C2ADF0792 /* ReviewLaunch.swift */,
+				156D11AB0F054ABF22132292 /* SpilltileApp.swift */,
+				311AEE3E6C0564107C6C6971 /* Brim */,
+				669154F1C3963B27D9807115 /* Catch */,
+				E187279A638565C102383B4F /* DayTally */,
+				EC3901EAF4AEF5680B7FB7F5 /* DripMark */,
+				341C21AAC134100015FE470E /* GhostMark */,
+				5F1BAFC404E923A171860967 /* SpillMark */,
+				61AE595354DF24A974B466C6 /* TickMark */,
+				094BD3761B3D9EE0959EE3C7 /* Tile */,
+				CC50818979159DBD96CB765C /* Tray */,
+			);
+			path = Spilltile;
+			sourceTree = "<group>";
+		};
+		5AF5362B4B226715E33F1C51 = {
+			isa = PBXGroup;
+			children = (
+				342753A11248679B1FCFBD9A /* Spilltile */,
+				F49C393DECB3B6E0CB4D7429 /* SpilltileTests */,
+				65739B7F6833FD695F069D36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F1BAFC404E923A171860967 /* SpillMark */ = {
+			isa = PBXGroup;
+			children = (
+				69D29EAD13B4E1B7B883A8EF /* SpillMark.swift */,
+				DA9D2E4AEB4833271A4F0183 /* StatsSheet.swift */,
+			);
+			path = SpillMark;
+			sourceTree = "<group>";
+		};
+		61AE595354DF24A974B466C6 /* TickMark */ = {
+			isa = PBXGroup;
+			children = (
+				1E02D8C61C568C504940945F /* TickMark.swift */,
+			);
+			path = TickMark;
+			sourceTree = "<group>";
+		};
+		65739B7F6833FD695F069D36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814091C54FEB78A581787C82 /* Spilltile.app */,
+				986030825A1FB517A73F27B2 /* SpilltileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		669154F1C3963B27D9807115 /* Catch */ = {
+			isa = PBXGroup;
+			children = (
+				4823DBB1FC12E251086C0DCC /* CatchRoute.swift */,
+			);
+			path = Catch;
+			sourceTree = "<group>";
+		};
+		CC50818979159DBD96CB765C /* Tray */ = {
+			isa = PBXGroup;
+			children = (
+				DB2323EF53A224A02C1FBC94 /* OnboardingFlow.swift */,
+				76508FC9FDAFBE18E6E640D6 /* SpillChrome.swift */,
+				BCD86A08BF4150E05D817BF1 /* TrayCanvas.swift */,
+				E26131396AE4D6BE4B21F431 /* TrayFold.swift */,
+				AB31215B6368A120DE1AE1BC /* TrayPager.swift */,
+			);
+			path = Tray;
+			sourceTree = "<group>";
+		};
+		E187279A638565C102383B4F /* DayTally */ = {
+			isa = PBXGroup;
+			children = (
+				403CC8939FF126F2336B479E /* DayTally.swift */,
+				FDCF5BF63ED3357E37AF6FB5 /* SettingsSheet.swift */,
+				EEC6F78CE5FBB7C8A29624FA /* TrayStore.swift */,
+			);
+			path = DayTally;
+			sourceTree = "<group>";
+		};
+		EC3901EAF4AEF5680B7FB7F5 /* DripMark */ = {
+			isa = PBXGroup;
+			children = (
+				85D3A1B33EBE09DAD0A44D4D /* DripMark.swift */,
+			);
+			path = DripMark;
+			sourceTree = "<group>";
+		};
+		F49C393DECB3B6E0CB4D7429 /* SpilltileTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AA1B1C3FEA56537FD3C36B0 /* SpilltileTests.swift */,
+			);
+			path = SpilltileTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDC156BB29A2510B0306307 /* Spilltile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81F91680EE1BEAC68ECC19D9 /* Build configuration list for PBXNativeTarget "Spilltile" */;
+			buildPhases = (
+				07553ABAC73FA20259311EF5 /* Sources */,
+				71A7DAD5C7E6F7C46B8CC526 /* Resources */,
+				852025543CB40DB3CF3939DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spilltile;
+			packageProductDependencies = (
+				3CF78C0FF15F206C8419A399 /* Alamofire */,
+			);
+			productName = Spilltile;
+			productReference = 814091C54FEB78A581787C82 /* Spilltile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF098F6210051C9CE80F2126 /* SpilltileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65213B1875A1ECB11174940D /* Build configuration list for PBXNativeTarget "SpilltileTests" */;
+			buildPhases = (
+				95FE50330FEE7186F538EDAC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7B62BEBA6B464CDC7BF61AF /* PBXTargetDependency */,
+			);
+			name = SpilltileTests;
+			packageProductDependencies = (
+			);
+			productName = SpilltileTests;
+			productReference = 986030825A1FB517A73F27B2 /* SpilltileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC309CFC0972FB0685E42514 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4DDC156BB29A2510B0306307 = {
+						ProvisioningStyle = Automatic;
+					};
+					CF098F6210051C9CE80F2126 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 97E2E01B292FD9F568752C4A /* Build configuration list for PBXProject "Spilltile" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5AF5362B4B226715E33F1C51;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1A998AF32B323AEF90906CBC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 65739B7F6833FD695F069D36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDC156BB29A2510B0306307 /* Spilltile */,
+				CF098F6210051C9CE80F2126 /* SpilltileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71A7DAD5C7E6F7C46B8CC526 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52E74606081E0EA153E4B65C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07553ABAC73FA20259311EF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC9EBF4614BC7824D6F2D81 /* APIConfig.swift in Sources */,
+				3EC905D738F36633F317AA80 /* AppDelegate.swift in Sources */,
+				B0EB0CB4AE5CFAFBC3DAE950 /* Brim.swift in Sources */,
+				2F2B93E7AA8EE6D87522A3BB /* CatchRoute.swift in Sources */,
+				40F39FC2A506EA5D9BF7DDC0 /* ContentView.swift in Sources */,
+				87E5753303AE05B306AFC34E /* DayTally.swift in Sources */,
+				B1988803CCAD35813BE01FC2 /* DesignTokens.swift in Sources */,
+				7826E5D70ABBA5459F412837 /* DripMark.swift in Sources */,
+				DAC3CEE64BA856099F3D8902 /* EditorSheet.swift in Sources */,
+				EC2719BAD6991130AE69C23C /* GhostMark.swift in Sources */,
+				1CE81E3AC77B19F489AFA852 /* OnboardingFlow.swift in Sources */,
+				23F04717FF6DC9BC921EC15C /* ReviewLaunch.swift in Sources */,
+				EA31BABC08B7938E35C5B20B /* SettingsSheet.swift in Sources */,
+				F079BC7FC7D8F8209D838EC1 /* SpillChrome.swift in Sources */,
+				713E1BEC89C102B839105E91 /* SpillMark.swift in Sources */,
+				07EEADDA47BAF78B7806039E /* SpilltileApp.swift in Sources */,
+				A136FD8C4C9E90CD5269ED42 /* StatsSheet.swift in Sources */,
+				A6D72585FB420AE7098F9F3C /* TickMark.swift in Sources */,
+				B54574C2BBB44B7D67834805 /* Tile.swift in Sources */,
+				244446B69DB8F1F7ADBC0648 /* TrayCanvas.swift in Sources */,
+				F2AD621CD48983F78160805F /* TrayFold.swift in Sources */,
+				F3648D33A9BFB54788A62830 /* TrayPager.swift in Sources */,
+				F6F6BC2EBEEDB588C18FEE0D /* TrayStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95FE50330FEE7186F538EDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267438C507E4B7C4E8760FAC /* SpilltileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7B62BEBA6B464CDC7BF61AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDC156BB29A2510B0306307 /* Spilltile */;
+			targetProxy = 320096585B8E007A3C245CAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		035D5C1A23FB17016222B90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spilltile.tray.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spilltile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spilltile";
+			};
+			name = Debug;
+		};
+		32AFDFDCF5FD6F5F8C3342E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sweetonza;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spilltile.tray;
+				PRODUCT_NAME = Spilltile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3496DC0DA76386C6C6F26DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spilltile.tray.tests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spilltile.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Spilltile";
+			};
+			name = Release;
+		};
+		47B03F54F732F17563D28AF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Debug;
+		};
+		A9A9882EB316C5183BAC3734 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Sweetonza;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spilltile.tray;
+				PRODUCT_NAME = Spilltile;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF1D3CF959221463BE3474DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65213B1875A1ECB11174940D /* Build configuration list for PBXNativeTarget "SpilltileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				035D5C1A23FB17016222B90D /* Debug */,
+				3496DC0DA76386C6C6F26DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		81F91680EE1BEAC68ECC19D9 /* Build configuration list for PBXNativeTarget "Spilltile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFDFDCF5FD6F5F8C3342E2 /* Debug */,
+				A9A9882EB316C5183BAC3734 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		97E2E01B292FD9F568752C4A /* Build configuration list for PBXProject "Spilltile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47B03F54F732F17563D28AF3 /* Debug */,
+				BF1D3CF959221463BE3474DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A998AF32B323AEF90906CBC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ymvmj7dsyy-stack/Alamofire";
+			requirement = {
+				kind = revision;
+				revision = 3ea8e93ec37a3ae5f255afb529ef20f438dd1903;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CF78C0FF15F206C8419A399 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A998AF32B323AEF90906CBC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FC309CFC0972FB0685E42514 /* Project object */;
+}

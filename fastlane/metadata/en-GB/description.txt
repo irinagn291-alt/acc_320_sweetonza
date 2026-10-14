@@ -1,0 +1,20 @@
+Spilltile is a tray of daily caps for people who track several limits in one day. Each cap is a named counter on its own page. You tick the counter sitting in the centre.
+
+• Daily caps on a paged tray; swipe or tap a name chip to change page
+• Tick the centred tile
+• Per-counter cap (brim)
+• Optional catch, opened or closed
+• Spill: at the brim, the next tick adds one to the catch and leaves this count at the brim
+• Drip: at the brim with the catch closed, the tick does not change any count
+• Ghost: an off-page tap does not change any count; “Ghosts” still rises
+• Peel: hold the tile to drop the last tick or spill for today
+• “Stats” for “Today” counts and “Spills”
+• “Editor” to add or rename a counter, set “Cap”, and set “Catch”
+• “Reset day tally” for one counter for today
+• “Erase tray”
+• “Show onboarding again”
+• “Contact support”
+• A new calendar day starts today’s counts at zero
+• Everything stays on this device
+
+The tray never leaves. “Stats”, “Editor”, and “Settings” open as sheets. Saved counters, caps, catch links, and today’s marks come back after quitting. Portrait only, on iPhone and iPad. Dark appearance. English only.
